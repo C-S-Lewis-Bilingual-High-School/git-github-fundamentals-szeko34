@@ -5,7 +5,7 @@ canvas.pack()
 
 mapa=tkinter.PhotoImage(file="based.gif")
 canvas.create_image(512,260.5,image=mapa)
-
+vjkfweasdcyx,bvsadbc.facsdyknvh,xbnsma,
 x=0
 y=0
 p=canvas.create_text(100,100,text="AHOJ")
