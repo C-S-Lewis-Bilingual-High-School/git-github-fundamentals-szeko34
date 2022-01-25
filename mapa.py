@@ -26,8 +26,8 @@ canvas.bind("<Button-1>",klik)
 canvas.bind("<B1-Motion>",hyb)
 
 
-def jedna():
-   pass
+def jedna(event):
+    canvas.create_oval(event.x - 15, event.y - 15, event.x + 15, event.y + 15, width=3, outline="green")
 
 def dva():
    pass
@@ -37,6 +37,8 @@ def tri():
 
 def styri():
    pass
+
+canvas.bind("<Button-3>",jedna)
 
 
 tkinter.mainloop()
