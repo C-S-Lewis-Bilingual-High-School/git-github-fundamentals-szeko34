@@ -3,7 +3,7 @@ import tkinter
 canvas=tkinter.Canvas(width=1024,height=521)
 canvas.pack()
 
-mapa=tkinter.PhotoImage(file="mapaSR.gif")
+mapa=tkinter.PhotoImage(file="based.gif")
 canvas.create_image(512,260.5,image=mapa)
 
 x=0
@@ -22,12 +22,14 @@ def hyb(e):
     canvas.delete("cara")
     canvas.create_line(x,y,e.x,e.y,tag="cara")
 
+def jedna(event):
+    quit()
+
 canvas.bind("<Button-1>",klik)
 canvas.bind("<B1-Motion>",hyb)
+canvas.bind_all("<Double-Button-1>",jedna)
 
 
-def jedna():
-   pass
 
 def dva():
    pass
@@ -40,4 +42,3 @@ def styri():
 
 
 tkinter.mainloop()
-
